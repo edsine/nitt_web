@@ -1,0 +1,14 @@
+.chart {
+  -ms-interpolation-mode: bicubic;
+}
+
+.downloadable li {
+  margin-bottom: 0.5rem;
+  text-decoration: none !important;
+  color: #27ae60;
+}
+
+.downloadable li a {
+  text-decoration: none !important;
+  color: #27ae60;
+}

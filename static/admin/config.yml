@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/images/uploads"
+collections:
+  - name: "events"
+    label: "Upcoming Events"
+    folder: "_posts/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Path", name: "path", widget: "hidden", default: "{{slug}}" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Events Start Date",
+          name: "event_start_date",
+          widget: "datetime",
+        }
+      - { label: "Events End Date", name: "event_end_date", widget: "datetime" }
+      - { label: "Events Duration", name: "event_duration", widget: "c" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "tag", name: "event_tag", widget: "string" }
+      - { label: "Event Priority", name: "priority", widget: "number" }
+      - { label: "location", name: "event_location", widget: "string" }
+      - { label: "Event Summary", name: "summary", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "news_media"
+    label: "News"
+    hint: "Add most update news and media"
+    folder: "_posts/newsandmedia"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "hidden", default: "{{slug}}" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "News Tag", name: "tag", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Minutes to read", name: "duration", widget: "number" }
+      - { label: "News Priority", name: "priority", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "projects"
+    label: "Projects"
+    folder: "_posts/projects"
+    create: true
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "hidden", default: "{{slug}}" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Type of Project", name: "projecttag", widget: "string" }
+      - {
+          label: "Short Summary About Project",
+          name: "summary",
+          widget: "string",
+        }
+      - { label: "priority", name: "priority", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "whatwedo"
+    label: "whatwedo"
+    folder: "_posts/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "hidden", default: "{{slug}}" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "About Us"
+    folder: "_posts/about"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Path", name: "path", widget: "hidden", default: "{{slug}}" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "data"
+    label: "Data"
+    folder: "_posts/data"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Path", name: "path", widget: "hidden", default: "{{slug}}" }
+      - { label: "Body", name: "body", widget: "markdown" }

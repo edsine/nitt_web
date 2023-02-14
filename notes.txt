@@ -1,0 +1,10 @@
+====================== NITT PAGE ===============================
+- remove logo for nitt page. leave only gate image. -- done
+- CHECKED OFF
+
+========================ABOUT US PAGE ==========================
+- CHECKED OFF
+
+=============HOME PAGE=================================
+- CHANGE ALL GREENS TO rgba(30,110,92,255) - null
+- CHANGE CURRENT LOGO FROM PNG TO SVG -done

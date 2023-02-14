@@ -1,0 +1,39 @@
+.newsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+}
+
+.header {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #27ae60;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.newsContainer div {
+  width: 378px;
+  padding-right : 30px
+}
+
+
+@media screen and (max-width: 1100px){
+  .newsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .newsContainer div {
+    width: 95%;
+    padding-right: 0px;
+  }
+
+  .wrapperDiv{
+    width: 90%;
+  }
+}

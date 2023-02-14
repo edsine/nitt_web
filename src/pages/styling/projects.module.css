@@ -1,0 +1,87 @@
+
+.projectComponentContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 650px;
+  width: 590px;
+  background-color: white;
+}
+
+.category div{
+  width: max-content !important;
+  height: 22px;
+  padding: 0.3rem 0.5rem;
+  background: #E6F4E5;
+  border-radius: 4px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  color: #27AE60;
+
+}
+
+.title h2{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  color: #1D1C1D;
+}
+
+.preview{
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
+
+.readMore p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  padding: 2rem;
+}
+
+.header {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #27ae60;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.projectsContainer div {
+  width: 378px;
+}
+
+
+/* media query for small screens */
+
+@media screen and (max-width: 900px){
+  .projectComponentContainer{
+    flex-direction: column;
+    height: max-content;
+    width: 90vw !important;
+  }
+
+  .projectsContainer{
+    padding: 1.5rem;
+    width: 90vw;
+  }
+
+  .projectsContainer div {
+    width: 90%;
+  }
+}
